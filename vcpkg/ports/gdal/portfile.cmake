@@ -104,7 +104,6 @@ vcpkg_cmake_configure(
         "-DQHULL_LIBRARY=${qhull_target}"
         "-DSWIG_DIR=${CURRENT_HOST_INSTALLED_DIR}/tools/swig"
         "-DSWIG_EXECUTABLE=${CURRENT_HOST_INSTALLED_DIR}/tools/swig/swig${VCPKG_HOST_EXECUTABLE_SUFFIX}"
-        "-DGDAL_PYTHON_INSTALL_PREFIX=${GDAL_PYTHON_INSTALL_PREFIX}"
         -DONLY_GENERATE_FOR_NON_DEBUG=ON # Python bindings only for release
         "-DCMAKE_PROJECT_INCLUDE=${CMAKE_CURRENT_LIST_DIR}/cmake-project-include.cmake"
     OPTIONS_DEBUG
